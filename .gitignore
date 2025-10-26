@@ -13,7 +13,6 @@
 !*.py
 !*.yml
 !path.csv
-!Readme*.html
 !version.txt
 
 # 忽略特定目錄內的文件
@@ -36,3 +35,5 @@
 *.tmp
 go.work
 go.work.sum
+*.exe
+*.html
