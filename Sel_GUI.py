@@ -26,7 +26,7 @@ class SEL_Download(wx.Frame):
             self,
             parent,
             id=wx.ID_ANY,
-            title=_(u"下載SEL電驛事故"),
+            title=_(u"下載電驛波形"),
             pos=wx.DefaultPosition,
             size=wx.Size(700, 470),
             style=wx.DEFAULT_FRAME_STYLE | wx.ALWAYS_SHOW_SB | wx.FULL_REPAINT_ON_RESIZE,
@@ -59,7 +59,7 @@ class SEL_Download(wx.Frame):
         self.m_staticDownIP1 = wx.StaticText(
             self.m_scrolledWindow5,
             wx.ID_ANY,
-            _(u"下載SEL電驛事故"),
+            _(u"下載電驛波形"),
             wx.DefaultPosition,
             wx.DefaultSize,
             0,
@@ -401,7 +401,7 @@ class SEL_Download(wx.Frame):
         self.m_buttonEXEFile = wx.Button(
             self.m_scrolledWindow5,
             wx.ID_ANY,
-            _(u"選擇執行檔位置（若SEL Download執行檔路徑錯誤，才要設定）"),
+            _(u"選擇執行檔位置（若Download執行檔路徑錯誤，才要設定）"),
             wx.DefaultPosition,
             wx.DefaultSize,
             0,

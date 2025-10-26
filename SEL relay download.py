@@ -137,13 +137,15 @@ class GUIFrame(Sel_GUI.SEL_Download):
         event.Skip()  # 確保焦點轉移不受影響
 
     def OnEXEFileClick(self, event):
-        # Create the dialog. In this case the current directory is forced as the starting
-        # directory for the dialog, and no default file name is forced. This can easily
-        # be changed in your program. This is an 'open' dialog, and allows multitple
-        # file selections as well.
-        #
-        # Finally, if the directory is changed in the process of getting files, this
-        # dialog is set up to change the current working directory to the path chosen.
+        """
+        Create the dialog. In this case the current directory is forced as the starting
+        directory for the dialog, and no default file name is forced. This can easily
+        be changed in your program. This is an 'open' dialog, and allows multitple
+        file selections as well.
+
+        Finally, if the directory is changed in the process of getting files, this
+        dialog is set up to change the current working directory to the path chosen.
+        """
         dlg = wx.FileDialog(
             self,
             message="選擇SEL Download執行檔位置",
