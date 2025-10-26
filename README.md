@@ -1,6 +1,6 @@
-# SEL Relay 波形下載工具
+# Relay 波形下載工具
 
-本工具提供系統化的 SEL 保護繼電器事件資料下載流程，核心以命令列腳本為主，並搭配 GUI 外殼方便現場操作。由於依賴多項 Windows 專用套件（如 `pywin32` 與 Win32 Tk 介面）以及 telnet 控制台事件處理，**僅支援於 Windows 平台執行**。
+本工具提供系統化的保護電驛波形資料下載流程，核心以命令列腳本為主，並搭配 GUI 外殼方便現場操作。由於依賴多項 Windows 專用套件（如 `pywin32` 與 Win32 Tk 介面）以及 telnet 控制台事件處理，**僅支援於 Windows 平台執行**。
 
 - **命令列核心**：`01-src/SEL relay download core.py` 內含完整事件擷取與檔案落地流程，並與通訊模組協作處理 ACC / PASS / HIS 及 SER / CEV 下載。
 - **Telnet 通訊模組**：`01-src/module.py` 的 `TelnetClient` 類別負責與 SEL 裝置建立連線、解析 CHI 清單、擴展事件 ID，以及檔名清理與儲存路徑維護。
@@ -74,10 +74,10 @@ conda activate sel_osc_down
 
 ## Debug / Logging
 
-- **GUI 快捷鍵**：在 GUI 視窗按下 `Ctrl+Shift+Alt+D`，並輸入密碼 `880330` 可開啟隱藏除錯面板以檢視 Telnet 命令與背景狀態。
+- **GUI 快捷鍵**：在 GUI 視窗按下 `Ctrl+Shift+Alt+D`，並輸入密碼可開啟隱藏除錯面板以檢視 Telnet 命令與背景狀態。
 - **CLI 記錄等級**：`-log` 參數可調整記錄層級；未指定時僅啟用錯誤記錄以避免無效輸出。
 - **隱藏資料夾機制**：`module.get_or_create_sel_download_log_folder()` 會在工作目錄建立 `SEL download log`，並透過 Win32 API 設為隱藏，以集中管理 CLI 與 GUI 產生的記錄檔。
 
 ## 授權
 
-本專案採用 [MIT License](LICENSE)。如需進一步協助，可參考 `version.txt` 中的版本資訊（目前為 `V1.2.2`）或聯絡專案維護者。
+本專案採用 [MIT License](LICENSE)。如需進一步協助，可連絡專案開發者。
