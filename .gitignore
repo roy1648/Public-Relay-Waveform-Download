@@ -1,0 +1,38 @@
+# 忽略所有文件
+*
+
+# 允許目錄結構
+!*/
+
+# 允許特定文件類型
+!*.go
+!*.sh
+!*.sql
+!*.mod
+!.gitignore
+!*.py
+!*.yml
+!path.csv
+!Readme*.html
+!version.txt
+
+# 忽略特定目錄內的文件
+**/OldRawData/*
+**/Phoenix-master/*
+**/build/*
+**/99_temp_test/*
+**/Phoenix-master/*
+**/02-release file/*
+
+# 忽略特定文件類型
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.xlsx
+*.bat
+*.lnk
+*.tmp
+go.work
+go.work.sum

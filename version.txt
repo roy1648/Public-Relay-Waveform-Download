@@ -1,0 +1,29 @@
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 2, 2, 4),
+    prodvers=(1, 2, 2, 4),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+    ),
+  kids=[
+    StringFileInfo(
+      [
+      StringTable(
+        u'040904B0',
+        [StringStruct('CompanyName', 'CHEN, JIA-LONG'),
+        StringStruct('FileDescription', 'Download event data from SEL Relay.'),
+        StringStruct('FileVersion', 'V1.2.2'),
+        StringStruct('InternalName', 'SEL_event_downloader'),
+        StringStruct('LegalCopyright', 'Copyright © 2024 CHEN, JIA-LONG.'),
+        StringStruct('OriginalFilename', 'main.py'),
+        StringStruct('ProductName', 'SEL event downloader'),
+        StringStruct('ProductVersion', 'V1.2.2')]
+      )]
+    ), 
+    VarFileInfo([VarStruct(u'Translation', [0x0404, 1200])])
+  ]
+)
